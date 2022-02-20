@@ -1,10 +1,5 @@
 :root {
   --background-dark: #1a1817;
-  --pink-purple-grad: linear-gradient(245deg, #585DFE 0%, #FB3796 100%);
-  --blue-grad: linear-gradient(245deg, #2B75EC 0%, #2EC4DE 100%);
-  --green-grad: linear-gradient(245deg, #05795A 0%, #10B680 100%);
-  --pink-orange-grad: linear-gradient(245deg, #ED4880 0%, #F38B17 100%);
-  --purple-grad: linear-gradient(245deg, #18244A 0%, #3B69E1 100%);
 }
 
 * {
@@ -17,19 +12,42 @@ body {
 }
 
 #root {
-  width: 80%;
+  width: 90%;
   min-height: 650px;
 
   text-align: center;
   
   margin: 0 auto;
+  padding: 10px;
 
   background-color: white;
 }
 
+h1 {
+  font-family: sans-serif;
+  margin: 10px 0;
+}
+
 .svg-div {
-  width: 100%;
-  min-height: 500px;
+  /* width: 100%; */
   margin: 0 auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   border: 1px solid red;
+}
+
+#y-axis path {
+  stroke: black;
+  stroke-width: 1;
+  fill: none;
+}
+
+#x-axis path {
+  stroke: black;
+  stroke-width: 1;
+  fill: none;
 }
