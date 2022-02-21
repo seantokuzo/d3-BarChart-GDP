@@ -12,15 +12,17 @@ body {
 }
 
 #root {
-  width: 90%;
-  min-height: 650px;
+  max-width: 800px;
 
   text-align: center;
   
-  margin: 0 auto;
-  padding: 10px;
+  margin: 5% auto;
+  padding: 20px;
 
-  background-color: white;
+  border: 3px solid white;
+  background-color: #f8e6c4;
+  box-shadow: 0 0 30px 0px #FFFFFF;
+  border-radius: 10px;
 }
 
 h1 {
@@ -29,15 +31,41 @@ h1 {
 }
 
 .svg-div {
-  /* width: 100%; */
   margin: 0 auto;
   padding: 20px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  border: 1px solid red;
+.bar {
+  
+}
+
+.bar:hover {
+  fill: #f17979;
+}
+
+#tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  padding: 2px;
+  font: 12px;
+  background: rgb(142, 184, 240);
+  box-shadow: 1px 1px 10px;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.overlay {
+  position: absolute;
+  pointer-events: none;
 }
 
 #y-axis path {
